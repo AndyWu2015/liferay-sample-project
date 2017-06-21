@@ -1,0 +1,11 @@
+
+Bundle-Name: Foo-api
+Bundle-SymbolicName: com.liferay.foo.api
+Bundle-Version: 1.0.0
+Export-Package:\
+	com.liferay.foo.exception,\
+	com.liferay.foo.constants,\
+	com.liferay.foo.model,\
+	com.liferay.foo.service,\
+	com.liferay.foo.service.persistence
+-includeresource: META-INF/service.xml=../Foo-service/service.xml

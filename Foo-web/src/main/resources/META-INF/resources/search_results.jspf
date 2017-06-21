@@ -1,0 +1,16 @@
+
+<%@page import="javax.portlet.RenderRequest"%>
+<%
+    searchContainer.setOrderByCol(orderByCol);
+    searchContainer.setOrderByType(orderByType);
+
+    SearchContainerResults<Foo> searchContainerResults = null;
+    if (Validator.isNull(keywords)) {
+        searchContainerResults = fooViewHelper.getListFromDB(renderRequest, searchContainer);
+    } else {
+        searchContainerResults = fooViewHelper.getListFromIndex(renderRequest, searchContainer);
+    }
+
+    searchContainer.setTotal(searchContainerResults.getTotal());
+    searchContainer.setResults(searchContainerResults.getResults());
+%>

@@ -1,0 +1,79 @@
+{
+  "projectName": "Foo",
+  "liferayVersion": "70",
+  "applications": [
+    {
+      "packageName" : "com.liferay.foo",
+      "model"       : "Foo",
+      "title"       : "Foo Test",
+      "web"         : "true",
+      "asset": {
+        "assetTitleFieldName": "fooTitleName",
+        "assetSummaryFieldName": "fooSummaryName",
+        "categories": "true",
+        "discussion": "true",
+        "ratings": "true",
+        "tags": "true",
+        "relatedAssets": "true",
+        "fullContentFieldName": "foofullContent",
+        "workflow": "true",
+        "generateActivity": "true",
+        "trash":"true"
+      },
+      "fieldsName" : "Foos",
+      "fields": [
+        {
+          "type": "com.liferay.damascus.cli.json.fields.Long",
+          "primaly":true,
+          "name": "fooId",
+          "title": "Foo Id",
+          "showFieldInView": "false",
+          "required": "true"
+        },
+        {
+          "type": "com.liferay.damascus.cli.json.fields.Varchar",
+          "name": "title",
+          "title": "Title",
+          "length": "80",
+          "showFieldInView": "true",
+          "required": "true"
+        },
+        {
+          "type": "com.liferay.damascus.cli.json.fields.Boolean",
+          "name": "fooBooleanStat",
+          "title": "Foo Boolean Stat"
+        },
+        {
+          "type": "com.liferay.damascus.cli.json.fields.DateTime",
+          "name": "fooDateTime",
+          "title": "Foo DateTime"
+        },
+        {
+          "type": "com.liferay.damascus.cli.json.fields.DocumentLibrary",
+          "name": "fooDocumentLibrary",
+          "title": "Foo DocumentLibrary"
+        },
+        {
+          "type": "com.liferay.damascus.cli.json.fields.Double",
+          "name": "fooDouble",
+          "title": "Foo Double"
+        },
+        {
+          "type": "com.liferay.damascus.cli.json.fields.Integer",
+          "name": "fooInteger",
+          "title": "Foo Integer"
+        },
+        {
+          "type": "com.liferay.damascus.cli.json.fields.RichText",
+          "name": "fooRichText",
+          "title": "Foo RichText"
+        },
+        {
+          "type": "com.liferay.damascus.cli.json.fields.Text",
+          "name": "fooText",
+          "title": "Foo Text"
+        }
+      ]
+    }
+  ]
+}

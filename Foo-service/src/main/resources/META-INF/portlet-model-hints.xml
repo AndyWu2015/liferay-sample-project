@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+
+<model-hints>
+	<model name="com.liferay.foo.model.Foo">
+		<field name="uuid" type="String" />
+		<field name="fooId" type="long" />
+		<field name="title" type="String">
+			<hint name="max-length">80</hint>
+		</field>
+		<field name="fooBooleanStat" type="boolean" />
+		<field name="fooDateTime" type="Date">
+			<hint name="show-time">false</hint>
+			<hint name="year-range-delta">80</hint>
+		</field>
+		<field name="fooDocumentLibrary" type="String">
+			<hint name="display-width">60</hint>
+			<hint name="max-length">512</hint>
+		</field>
+		<field name="fooDouble" type="double" />
+		<field name="fooInteger" type="int" />
+		<field name="fooRichText" type="String">
+			<hint-collection name="TEXTAREA" />
+			<hint name="max-length">4001</hint>
+		</field>
+		<field name="fooText" type="String">
+			<hint-collection name="TEXTAREA" />
+			<hint name="max-length">4001</hint>
+		</field>
+		<field name="groupId" type="long" />
+		<field name="companyId" type="long" />
+		<field name="userId" type="long" />
+		<field name="userName" type="String" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="urlTitle" type="String" />
+		<field name="fooTitleName" type="String">
+			<hint name="display-width">200</hint>
+			<hint name="max-length">255</hint>
+		</field>
+		<field name="fooSummaryName" type="String">
+			<hint-collection name="TEXTAREA" />
+			<hint name="max-length">4001</hint>
+		</field>
+		<field name="status" type="int" />
+		<field name="statusByUserId" type="long" />
+		<field name="statusByUserName" type="String" />
+		<field name="statusDate" type="Date" />
+	</model>
+</model-hints>
